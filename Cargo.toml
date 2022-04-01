@@ -1,0 +1,17 @@
+[workspace]
+members = [
+    "programs/*"
+]
+[programs.localnet]
+oinker = "y2ipkth52szcYUdzwqeeUVJvt2jSkDzPsJ1zm1cMfjp"
+[programs.devnet]
+oinker = "y2ipkth52szcYUdzwqeeUVJvt2jSkDzPsJ1zm1cMfjp"
+[registry]
+url = "loclahost:8080"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/francisisberto/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
